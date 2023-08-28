@@ -117,3 +117,31 @@ body {
     color: #262627;
   }
   
+.main-app-button button[data-aclear] {
+  grid-column: 1/3;
+  background-color: var(--common-bg);
+}
+
+.main-app-button button[data-equals] {
+  grid-column: 3/5;
+  background-color: var(--mutual-bg);
+  color: #FFFFFF;
+}
+
+.main-app-button button[data-number] {
+  background-color: var(--number-bg);
+}
+
+.main-app-button button[data-symbol] {
+  background-color: var(--symbol-bg);
+}
+
+.main-app-button button[data-delete] {
+  background-color: var(--common-bg);
+}
+
+#main-app-attrb {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 0.8em;
+}
