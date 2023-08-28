@@ -72,3 +72,29 @@ body {
     cursor: pointer;
   }
   
+/* Screen */
+.main-app-screen {
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 160px;
+    flex-direction: column;
+    background-color: var(--screen-bg);
+    padding: var(--padding);
+    overflow-x: auto;
+  }
+  
+  .main-app-screen p {
+    font-size: 1.8em;
+    color: var(--screen-clr);
+  }
+  
+  .main-app-motion {
+    transition: ease-in-out 0.5s;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  
+  .main-app-error {
+    color: hsl(0, 50%, 50%) !important;
+  }
+  
