@@ -98,3 +98,22 @@ body {
     color: hsl(0, 50%, 50%) !important;
   }
   
+/* Button */
+.main-app-button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 60px;
+    grid-gap: 2px;
+    padding: var(--padding);
+    background-color: var(--shared-bg);
+  }
+  
+  .main-app-button button {
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: inherit;
+    outline: none;
+    color: #262627;
+  }
+  
