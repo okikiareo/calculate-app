@@ -37,3 +37,38 @@ body {
   display: flex;
   align-items: center;
 }
+
+/* Main */
+#main-app-fluid {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--main-bg);
+    padding: 2em 0;
+  }
+  
+  .main-app-hero {
+    width: 92%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .main-app-header {
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--shared-bg);
+  }
+  
+  .main-app-header h1 {
+    color: #FFFFFF;
+    padding: 3px;
+    background-color: var(--mutual-bg);
+    font-weight: 400;
+    font-size: 1.2em;
+  }
+  
+  .main-app-header img {
+    filter: invert(0.5);
+    cursor: pointer;
+  }
+  
