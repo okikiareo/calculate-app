@@ -161,4 +161,29 @@ class App {
       }
     }
    
+    if (keys != '' && index == 1) {
+        let len = keys.length - 1;
+        keys = keys.substr(0, len);
+        operands[index] = keys;
+        app.revealButton(keys);
+        if (keys == '') operands.length = 1;
+      }
+      
+      if (keys == '' && index == 0) {
+        operands = [];
+        inputs.innerText = 0;
+      }
+    }
+    
+    formatOutput(e) {
+      operands = [];
+      keys = '';
+      operator = '';
+      index = 0;
+      result = '';
+      inputs.innerText = 0;
+      output.innerText = '';
+    }
+  }
+  
   
