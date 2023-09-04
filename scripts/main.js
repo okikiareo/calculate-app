@@ -132,5 +132,33 @@ class App {
   cachesResult(e) {
     operands = [result.toString()];
     keys = result.toString();
+    index = 0;
+    operator = '';
+  }
   
+  deleteOutput(e) {
+    if (result != '') {
+      result = '';
+      keys = '';
+      operands = [];
+    }
+    
+    if (keys == '' && index == 1) {
+      index = 0;
+      keys = operands[0];
+      operands = [keys];
+    }
+    
+    if (keys != '' && index == 0) {
+      if (operator != '') {
+        operator = '';
+        inputs.innerText = keys;
+      } else {
+        let len = keys.length - 1;
+        keys = keys.substr(0, len);
+        operands[index] = keys;
+        app.revealButton(keys);
+      }
+    }
+   
   
