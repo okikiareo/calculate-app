@@ -186,4 +186,34 @@ class App {
     }
   }
   
+const app = new App();
+
+document.querySelectorAll('[data-number]')
+  .forEach(number => number
+  .addEventListener('click', (e) => app
+  .appendNumber(e.target)));
+
+document.querySelectorAll('[data-symbol]')
+  .forEach(symbol => symbol
+  .addEventListener('click', (e) => app
+  .appendSymbol(e.target)));
+
+aclear.addEventListener('click', () => app.formatOutput());
+
+erases.addEventListener('click', () => app.deleteOutput());
+
+equals.addEventListener('click', () => app.equateOutput());
+
+document.querySelector('.main-app-button')
+.addEventListener('click', (e) => {
+  let key = e.target.innerText;
+  
+  if (inputs.classList.contains('main-app-motion')) {
+    if (key == '=') return;
+    inputs.classList.remove('main-app-motion');
+    output.innerText = '';
+  }
+});
+
+  
   
