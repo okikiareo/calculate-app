@@ -84,4 +84,53 @@ class App {
       }
     }
     
+  revealButton(e) {
+    if (index == 1) {
+      inputs.innerText = operands[0].toString() + operator + e;
+    } else {
+      inputs.innerText = e;
+    }
+  }
+  
+  returnResult(e) {
+    let [a, b] = operands.map(operand => parseFloat(operand));
+    
+    switch (operator) {
+      case '+':
+        result = a + b;
+        break;
+      case '-':
+        result = a - b;
+        break;
+      case '*':
+        result = a * b;
+        break;
+      case '/':
+        result = a / b;
+        break;
+    }
+  }
+  
+  equateOutput(e) {
+    if (operands.length != 2) return;
+    app.returnResult();
+    app.cachesResult();
+    inputs.className = 'main-app-motion';
+    
+    if (result == Infinity) {
+      output.className = 'main-app-error';
+      output.innerText = 'Can\'t divide by 0';
+    } else if (operands.includes('NaN')) {
+      output.className = 'main-app-error';
+      output.innerText = 'Error';
+    } else {
+      if (output.classList.contains('main-app-error')) output.classList.remove('main-app-error');
+      output.innerText = result;
+    }
+  }
+  
+  cachesResult(e) {
+    operands = [result.toString()];
+    keys = result.toString();
+  
   
