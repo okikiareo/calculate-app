@@ -65,6 +65,7 @@ body {
     background-color: var(--mutual-bg);
     font-weight: 400;
     font-size: 1.2em;
+    border-radius: 5px;
   }
   
   .main-app-header img {
