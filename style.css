@@ -26,10 +26,11 @@ body {
   font-family: 'Shippori Antique', sans-serif;
   font-size: 15px;
   --padding: 5px;
-  --number-bg: #5885AF;
-  --symbol-bg: #C3E0E5;
-  --common-bg: #41729F;
-  --mutual-bg: #274472;
+  --number-bg: #2f9e9e;
+  --symbol-bg: #33afaf;
+  --common-bg: #2e8888;
+  --mutual-bg:#2c7070;
+  
 }
 
 /* Utility */
