@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Screenshot
 - Light Mode
-![](./images/light_mode_screenshot.png)
+![](./images/light_mode_screenshot.jpg)
 
 - Dark Mode
-![](./images/dark_mode_screenshot.png)
+![](./images/dark_mode_screenshot.jpg)
